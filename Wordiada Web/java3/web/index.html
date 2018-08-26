@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Wordiada</title>
+</head>
+<style>
+    img {
+        display: block;
+        margin: auto;
+        width: 40%;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: azure;
+    }
+
+    .container {
+        display:block;
+        margin: auto;
+        width: 20%;
+
+    }
+
+    .right {
+        display:block;
+        margin: auto;
+        width: 0%;
+    }
+</style>
+<body background="images/Professional-Website-Background-White-106363.jpg">
+<header>
+    <img src="images/WordiadaMain.png">
+</header>
+<nav>
+        <form accept-charset="UTF-8" action="http://localhost:8080/WordiadaWeb/LoginPage" autocomplete="off" method="post">
+            <div class="container">
+                User Name: <input type="text" name="username" value="kobi" align="center"><br/>
+                Choose Type:<br/>
+                <input checked="checked" name="type" type="radio" value="Human" /> Human <br />
+                <input name="type" type="radio" value="Computer" align="center" /> Computer <br />
+                <div class="right">
+                    <button type="submit" value="Submit">Submit</button>
+                </div>
+            </div>
+
+        </form>
+</nav>
+</body>
+</html>

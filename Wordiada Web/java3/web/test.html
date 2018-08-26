@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>Wordiada</title>
+</head>
+<style>
+    img {
+        display: block;
+        margin: auto;
+        width: 40%;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: azure;
+    }
+
+    .container {
+        display:block;
+        margin: auto;
+        width: 20%;
+
+    }
+
+    .right {
+        display:block;
+        margin: auto;
+        width: 0%;
+    }
+	#images{
+		align:center;
+		background: url(SecondPageButton.png);
+		heigth: 300px;
+		width: 300px;
+		background-position: center;
+		img-align: middle
+	}
+	
+	#text{
+		font-family:Courier New;
+		background-color: white;
+		filter: alpha(opacity=100);
+		opacity: 0.55;
+		font-weight: bold;
+		font-size: 20px;
+		color: black;
+		text-align: center;
+	}
+	.button{
+		margin: auto;
+		display: block;
+	}
+	input[type="text"]
+	{
+		background: transparent;
+		border: none;
+		visibility: hidden
+	}
+</style>
+<body background="Professional-Website-Background-White-106363.jpg">
+<header>
+    <img src="WordiadaMain.png">
+</header>
+<img src="Open Rooms.png"/>
+
+<nav>
+	<form accept-charset="UTF-8" action="http://localhost:8080/SecondPage" autocomplete="off" method="GET">
+	<input type="text" name="room" value="1">
+	<button class="button" type="submit"  height="20px" width="20px" position="absolute" top="50%">
+	<div id="images" height="300px" width="250px">
+		<div id="text">
+		
+		</div>
+	</div>
+	</button>
+	</form>
+	</br>
+</nav>
+</body>
+</html>

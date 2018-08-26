@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>Wordiada</title>
+	<script src="../../common/jquery-2.0.3.min.js"></script>
+	<script src="../../common/context-path-helper.js"></script>
+	<link rel="stylesheet" href="../../common/bootstrap.min.css">
+	<link rel="stylesheet" href="Rooms.css">
+</head>
+<body background="../../images/Professional-Website-Background-White-106363.jpg">
+<header>
+	<img src="../../images/WordiadaMain.png">
+	<form action="http://localhost:8080/WordiadaWeb/Logout" method="get">
+		<div class="logout">
+			<Button  name="btn" value="quitbtn"> Logout </Button>
+		</div>
+	</form>
+</header>
+<form accept-charset="UTF-8" action="http://localhost:8080/WordiadaWeb/UploadDataPage" autocomplete="off" method="post" enctype="multipart/form-data">
+	<div class="container">
+		<h3>Enter your own game:</h3>
+		Choose XML File: <input type="file" name="xml" title="" ><br />
+		Choose Dictionary File: <input type="file" name="dictionary" title=""><br />
+		<div class="right">
+			<button type="submit" value="Submit">Submit</button>
+		</div>
+	</div>
+	<label class=\"red\">Error in XML file - please enter valid XML</label>
+</form>
+<div class="left">
+	<img src="../../images/Player List.png"/>
+	<div class="sidebar">
+		<div id="userslist" class="left">
+		</div>
+	</div>
+</div>
+
+<div class="right">
+	<img src="../../images/Open Rooms.png"/>
+	<div id="roomsarea" class="span6"></div>
+</div>
+<nav>
+
+
+</nav>
+<script src="Rooms.js"></script>
+</body>
+</html>

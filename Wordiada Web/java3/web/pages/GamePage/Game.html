@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Wordiada</title>
+	<script src="../../common/jquery-2.0.3.min.js"></script>
+	<script src="../../common/context-path-helper.js"></script>
+	<script src="Game.js"></script>
+	<link rel="stylesheet" href="../../common/bootstrap.min.css">
+	<link rel="stylesheet" href="Game.css">
+</head>
+<body background="../../images/Professional-Website-Background-White-106363.jpg">
+<header>
+    <img src="../../images/WordiadaMain.png">
+	<form action="http://localhost:8080/WordiadaWeb/Logout" method="get">
+	<div class="logout">
+		<Button  name="btn" value="quitbtn"> Logout </Button>
+	</div>
+	</form>
+</header>
+<div style="width:1100px; height:600px; padding-left: 120px">
+
+    <div class="top" style="width: 1000px; height: 50px; word-spacing:5px; padding-top: 5px  ">
+        <center>
+			<Button class="quitgame" name="btn" value="quitbtn"> Quit Game </Button>
+			<Button class="button" name="btn" value="cubebtn"> Throw Cube </Button>
+			<Button class="button" name="btn" value="exposebtn">Expose</Button>
+			<Button class="button" name="btn" value="testwordbtn">Test Word</Button>
+        </center>
+    </div>
+
+    <div class="left" style="Height:600px; Width:200;" >
+        <h3>Players list: </h3>
+        <div style="overflow-x: scroll; overflow-y: scroll; height: 400px">
+			<div id="userslist" class="left">
+			</div>
+        </div>
+    </div>
+
+    <div class="board"  style="width: 600px; height: 400px;float: left; padding-left: 20px; padding-right: 10px" >
+        <center>
+            <br><br>
+            <div style="height: 440px; width: 570px ;overflow-x: scroll; overflow-y: scroll">
+                <table>
+                    <tbody>
+                    <form action="wordiada" method="get">
+                       <div id="boardprint">
+					   
+						</div>
+                    </form>
+                    </tbody>
+                </table>
+            </div>
+        </center>
+    </div>
+
+    <div class="right" style="height:500px;width:150px; float:left; padding-left: 15px ">
+        <h3>Words Composed:</h3>
+        <div id="wordcomposed" class="playersWords" style="overflow-x: scroll; overflow-y: scroll; height: 400px">
+        <ul> </ul>
+        </div>
+    </div>
+    <div id="massage" calss="bottom" style="width: 1000px; height:50px">
+    </div>
+</div>
+
+</body>
+</html>
+
